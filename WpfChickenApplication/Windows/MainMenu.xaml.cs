@@ -34,5 +34,10 @@ namespace WpfChickenApplication.Windows
             MyAccount my = new MyAccount(CurrentAcc);
             my.Show();
         }
+        private void level0Button_Click(object sender, RoutedEventArgs e)
+        {
+            Alphabet al = new Alphabet(CurrentAcc);
+            al.Show();
+        }
     }
 }

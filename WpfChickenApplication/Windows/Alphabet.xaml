@@ -4,6 +4,328 @@
         Title="Alphabet" Height="768" Width="1366"
         WindowStyle="None" WindowState="Maximized">
     <Grid>
-        
+        <Image x:Name="А" HorizontalAlignment="Left" Height="108" Margin="80,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/А.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="З" HorizontalAlignment="Left" Height="108" Margin="156,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/З.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="П" HorizontalAlignment="Left" Height="108" Margin="103,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/П.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ш" HorizontalAlignment="Left" Height="108" Margin="179,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ш.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Б" HorizontalAlignment="Left" Height="108" Margin="218,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Б.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="И" HorizontalAlignment="Left" Height="108" Margin="294,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/И.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Р" HorizontalAlignment="Left" Height="108" Margin="241,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Р.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Щ" HorizontalAlignment="Left" Height="108" Margin="317,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Щ.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="В" HorizontalAlignment="Left" Height="108" Margin="363,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/В.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Й" HorizontalAlignment="Left" Height="108" Margin="439,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Й.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="С" HorizontalAlignment="Left" Height="108" Margin="386,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/С.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ъ" HorizontalAlignment="Left" Height="108" Margin="462,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ъ.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Г" HorizontalAlignment="Left" Height="108" Margin="509,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Г.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="К" HorizontalAlignment="Left" Height="108" Margin="585,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/К.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Т" HorizontalAlignment="Left" Height="108" Margin="532,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Т.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ы" HorizontalAlignment="Left" Height="108" Margin="608,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ы.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Д" HorizontalAlignment="Left" Height="108" Margin="660,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Д.png" RenderTransformOrigin="0.5,0.5" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Л" HorizontalAlignment="Left" Height="108" Margin="736,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Л.png" RenderTransformOrigin="0.5,0.5" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="У" HorizontalAlignment="Left" Height="108" Margin="683,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/У.png" RenderTransformOrigin="0.5,0.5" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ь" HorizontalAlignment="Left" Height="108" Margin="759,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ь.png" RenderTransformOrigin="0.5,0.5" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Е" HorizontalAlignment="Left" Height="108" Margin="810,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Е.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="М" HorizontalAlignment="Left" Height="108" Margin="886,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/М.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ф" HorizontalAlignment="Left" Height="108" Margin="833,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ф.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Э" HorizontalAlignment="Left" Height="108" Margin="909,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Э.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ё" HorizontalAlignment="Left" Height="108" Margin="954,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ё.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Н" HorizontalAlignment="Left" Height="108" Margin="1030,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Н.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Х" HorizontalAlignment="Left" Height="108" Margin="977,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Х.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ю" HorizontalAlignment="Left" Height="108" Margin="1053,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ю.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ж" HorizontalAlignment="Left" Height="108" Margin="1099,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ж.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="О" HorizontalAlignment="Left" Height="108" Margin="1175,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/О.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ц" HorizontalAlignment="Left" Height="108" Margin="1122,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ц.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Я" HorizontalAlignment="Left" Height="108" Margin="1198,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Я.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Image x:Name="Ч" HorizontalAlignment="Left" Height="108" Margin="45,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ч.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Button x:Name="backButton" Content="             Назад" HorizontalAlignment="Left" Margin="53,662,0,0" VerticalAlignment="Top" Width="392" Height="82" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="backButton_Click" />
+        <Button x:Name="nextButton" Content="        Продолжить" HorizontalAlignment="Left" Margin="810,662,0,0" VerticalAlignment="Top" Width="392" Height="82" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic"/>
     </Grid>
+    <Window.Resources>
+        <GradientStopCollection x:Key="MyGlassGradientStopsResource">
+            <GradientStop Color="WhiteSmoke" Offset="0.2" />
+            <GradientStop Color="Transparent" Offset="0.4" />
+            <GradientStop Color="WhiteSmoke" Offset="0.5" />
+            <GradientStop Color="Transparent" Offset="0.75" />
+            <GradientStop Color="WhiteSmoke" Offset="0.9" />
+            <GradientStop Color="Transparent" Offset="1" />
+        </GradientStopCollection>
+        <LinearGradientBrush x:Key="MyGlassBrushResource" 
+   StartPoint="0,0" EndPoint="1,1" Opacity="0.75" 
+   GradientStops="{StaticResource MyGlassGradientStopsResource}" />
+        <LinearGradientBrush x:Key="GrayBlueGradientBrush" 
+    StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="DarkGray" Offset="0" />
+            <GradientStop Color="#CCCCFF" Offset="0.5" />
+            <GradientStop Color="DarkGray" Offset="1" />
+        </LinearGradientBrush>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="{StaticResource GrayBlueGradientBrush}" />
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Width="{TemplateBinding Width}" 
+      Height="{TemplateBinding Height}" ClipToBounds="True">
+
+                            <!-- Outer Rectangle with rounded corners. -->
+                            <Rectangle x:Name="outerRectangle" HorizontalAlignment="Stretch" 
+      VerticalAlignment="Stretch" Stroke="{TemplateBinding Background}" 
+      RadiusX="20" RadiusY="20" StrokeThickness="5" Fill="Transparent" />
+
+                            <!-- Inner Rectangle with rounded corners. -->
+                            <Rectangle x:Name="innerRectangle" HorizontalAlignment="Stretch" 
+        VerticalAlignment="Stretch" Stroke="Transparent" 
+        StrokeThickness="20" 
+        Fill="{TemplateBinding Background}" RadiusX="20" RadiusY="20" 
+      />
+
+                            <!-- Glass Rectangle -->
+                            <Rectangle x:Name="glassCube" HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch"
+        StrokeThickness="2" RadiusX="10" RadiusY="10" Opacity="0"
+        Fill="{StaticResource MyGlassBrushResource}"
+        RenderTransformOrigin="0.5,0.5">
+                                <Rectangle.Stroke>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <LinearGradientBrush.GradientStops>
+                                            <GradientStop Offset="0.0" Color="LightBlue" />
+                                            <GradientStop Offset="1.0" Color="Gray" />
+                                        </LinearGradientBrush.GradientStops>
+                                    </LinearGradientBrush>
+                                </Rectangle.Stroke>
+
+                                <!-- These transforms have no effect as they 
+             are declared here. 
+             The reason the transforms are included is to be targets 
+             for animation (see later). -->
+                                <Rectangle.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform />
+                                        <RotateTransform />
+                                    </TransformGroup>
+                                </Rectangle.RenderTransform>
+
+                                <!-- A BevelBitmapEffect is applied to give the button a 
+               "Beveled" look. -->
+                                <Rectangle.BitmapEffect>
+                                    <BevelBitmapEffect />
+                                </Rectangle.BitmapEffect>
+                            </Rectangle>
+
+                            <!-- Present Text of the button. -->
+                            <DockPanel Name="myContentPresenterDockPanel">
+                                <ContentPresenter x:Name="myContentPresenter" Margin="20" 
+          Content="{TemplateBinding  Content}" TextBlock.Foreground="Black" />
+                            </DockPanel>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <!-- Set properties when mouse pointer is over the button. -->
+                            <Trigger Property="IsMouseOver" Value="True">
+
+                                <!-- Below are three property settings that occur when the 
+         condition is met (user mouses over button).  -->
+                                <!-- Change the color of the outer rectangle when user          mouses over it. -->
+                                <Setter Property ="Rectangle.Stroke" TargetName="outerRectangle"
+      Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+
+                                <!-- Sets the glass opacity to 1, therefore, the          glass "appears" when user mouses over it. -->
+                                <Setter Property="Rectangle.Opacity" Value="1"       TargetName="glassCube" />
+
+                                <!-- Makes the text slightly blurry as though you were          looking at it through blurry glass. -->
+                                <Setter Property="ContentPresenter.BitmapEffect"       TargetName="myContentPresenter">
+                                    <Setter.Value>
+                                        <BlurBitmapEffect Radius="1" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <!-- Set properties when button has focus. -->
+                            <Trigger Property="IsFocused" Value="true">
+                                <Setter Property="Rectangle.Opacity" Value="1"       TargetName="glassCube" />
+                                <Setter Property="Rectangle.Stroke" TargetName="outerRectangle"
+      Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" />
+                                <Setter Property="Rectangle.Opacity" Value="1" TargetName="glassCube" />
+                            </Trigger>
+                            <!-- Animations that start when mouse enters and leaves button. -->
+                            <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard Name="mouseEnterBeginStoryboard">
+                                        <Storyboard>
+
+                                            <!-- This animation makes the glass rectangle shrink in the X direction. -->
+                                            <DoubleAnimation Storyboard.TargetName="glassCube" 
+          Storyboard.TargetProperty=
+          "(Rectangle.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+          By="-0.1" Duration="0:0:0.5" />
+
+                                            <!-- This animation makes the glass rectangle shrink in the Y direction. -->
+                                            <DoubleAnimation
+        Storyboard.TargetName="glassCube" 
+          Storyboard.TargetProperty=
+          "(Rectangle.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" 
+          By="-0.1" Duration="0:0:0.5" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                                <EventTrigger.Actions>
+
+                                    <!-- Stopping the storyboard sets all animated properties back to default. -->
+                                    <StopStoryboard BeginStoryboardName="mouseEnterBeginStoryboard" />
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <!-- Animation fires when button is clicked, causing glass to spin.  -->
+                            <!-- Animation fires when button is clicked, causing glass to spin.  -->
+                            <EventTrigger RoutedEvent="Button.Click">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="glassCube" 
+          Storyboard.TargetProperty=
+          "(Rectangle.RenderTransform).(TransformGroup.Children)[1].(RotateTransform.Angle)" 
+          By="360" Duration="0:0:0.5" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
 </Window>

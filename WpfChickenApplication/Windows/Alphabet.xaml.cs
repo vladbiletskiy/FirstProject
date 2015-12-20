@@ -14,14 +14,17 @@ using System.Windows.Shapes;
 
 namespace WpfChickenApplication.Windows
 {
-    /// <summary>
-    /// Логика взаимодействия для Alphabet.xaml
-    /// </summary>
+
     public partial class Alphabet : Window
     {
-        public Alphabet()
+        public Alphabet(Account acc)
         {
             InitializeComponent();
+            ColorScheme.GetColorScheme(this);
+        }
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
