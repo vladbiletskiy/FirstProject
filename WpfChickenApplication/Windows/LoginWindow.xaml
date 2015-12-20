@@ -5,7 +5,7 @@
         Title="LoginWindow" Height="768" Width="1366"
         WindowStyle="None" WindowState="Maximized">
     <Grid>
-        <Ellipse x:Name="exitButton" HorizontalAlignment="Left" Height="45" Margin="1305,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="43" Fill="#FFFB0000" MouseDown="Ellipse_MouseDown" MouseEnter="Ellipse_MouseEnter" MouseLeave="Ellipse_MouseLeave"/>
+        <Ellipse x:Name="exitButton" HorizontalAlignment="Left" Height="45" Margin="1305,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="43" Fill="#FFFB0000" MouseDown="exitButton_MouseDown" MouseEnter="exitButton_MouseEnter" MouseLeave="exitButton_MouseLeave"/>
         <Button x:Name="registerButton" Content="   Регистрация" HorizontalAlignment="Left" Margin="180,450,0,0" VerticalAlignment="Top" Width="425" Height="135" FontFamily="Palatino Linotype" FontSize="48" FontWeight="Bold" FontStyle="Italic" Click="registerButton_Click"/>
         <Button x:Name="loginButton" Content="            Вход" HorizontalAlignment="Left" Margin="810,450,0,0" VerticalAlignment="Top" Width="425" Height="135" FontFamily="Palatino Linotype" FontSize="48" FontWeight="Bold" FontStyle="Italic" Click="loginButton_Click"/>
         <ComboBox x:Name="nameBox" HorizontalAlignment="Left" Margin="180,315,0,0" VerticalAlignment="Top" Width="1055" Height="75" FontFamily="Palatino Linotype" FontWeight="Bold" FontStyle="Italic" FontSize="48"/>

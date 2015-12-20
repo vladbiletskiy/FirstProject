@@ -14,14 +14,22 @@ using System.Windows.Shapes;
 
 namespace WpfChickenApplication.Windows
 {
-    /// <summary>
-    /// Логика взаимодействия для MyAccount.xaml
-    /// </summary>
     public partial class MyAccount : Window
     {
-        public MyAccount()
+        public MyAccount(Account acc)
         {
             InitializeComponent();
+            ColorScheme.GetColorScheme(this);
+            nameLabel.Content = acc.Name;
+        }
+        private void exitButton_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
+            Application.Current.Shutdown();
+        }
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

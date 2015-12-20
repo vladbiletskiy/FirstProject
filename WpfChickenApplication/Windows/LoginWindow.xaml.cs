@@ -41,17 +41,23 @@ namespace WpfChickenApplication
             }
             foreach (var element in Account_List) nameBox.Items.Add(element.Name);
         }
-        private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
+        private void exitButton_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (MessageBox.Show("Выйти из программы?", "Выход", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
                 Application.Current.Shutdown();
         }
+        private void exitButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            exitButton.StrokeThickness = 5;
+        }
+        private void exitButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            exitButton.StrokeThickness = 1;
+        }
         private void registerButton_Click(object sender, RoutedEventArgs e)
         {
             RegisterWindow rf = new RegisterWindow();
-            this.Hide();
             rf.ShowDialog();
-            this.Show();
             if (Account_List.Count!=0&&!nameBox.Items.Contains(Account_List.Last().Name)) nameBox.Items.Add(Account_List.Last().Name);
         }
         private void loginButton_Click(object sender, RoutedEventArgs e)
@@ -65,16 +71,7 @@ namespace WpfChickenApplication
             }
             mm = new MainMenu(acc);
             this.Hide();
-            mm.ShowDialog();
-            this.Show();
-        }
-        private void Ellipse_MouseEnter(object sender, MouseEventArgs e)
-        {
-            exitButton.StrokeThickness = 5;
-        }
-        private void Ellipse_MouseLeave(object sender, MouseEventArgs e)
-        {
-            exitButton.StrokeThickness = 1;
+            mm.Show();
         }
     }
 }
