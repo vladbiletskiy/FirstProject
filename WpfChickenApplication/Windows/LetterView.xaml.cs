@@ -24,21 +24,24 @@ namespace WpfChickenApplication.Windows
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
             Letter.Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Letters/"+s+".png"));
-            if (alph.IndexOf(s[0]) != alph.Length - 1) MainMenu.CurrentAcc.Task_Avalible=alph.IndexOf(s[0])+1;
-            else
+            currentIndex = alph.IndexOf(s[0]);
+            if (MainMenu.CurrentAcc.Task_Avalible <= currentIndex + 1)
             {
-                MainMenu.CurrentAcc.Task_Avalible = 1;
-                MainMenu.CurrentAcc.Level_Avalible++;
+                if (alph.IndexOf(s[0]) != alph.Length - 1) MainMenu.CurrentAcc.Task_Avalible =currentIndex+1;
+                else
+                {
+                    MainMenu.CurrentAcc.Task_Avalible = 1;
+                    MainMenu.CurrentAcc.Level_Avalible++;
+                }
             }
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
-            LetterView next = new LetterView(Convert.ToString(alph[MainMenu.CurrentAcc.Task_Avalible]));
+            LetterView next = new LetterView(Convert.ToString(alph[currentIndex+1]));
             next.Show();
             this.Close();
         }

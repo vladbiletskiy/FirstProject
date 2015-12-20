@@ -3,12 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Level1" Height="768" Width="1366"
         WindowStyle="None" WindowState="Maximized">
-    <Grid>
+    <Grid Name="Board">
         <Button x:Name="backButton" Content="             Назад" HorizontalAlignment="Left" Margin="71,610,0,0" VerticalAlignment="Top" Width="429" Height="122" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="backButton_Click"/>
-        <Button x:Name="nextButton" Content="        Продолжить" HorizontalAlignment="Left" Margin="790,610,0,0" VerticalAlignment="Top" Width="430" Height="122" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic"/>
-        <StackPanel HorizontalAlignment="Left" Height="270" Margin="10,335,0,0" VerticalAlignment="Top" Width="1338">
-        </StackPanel>
-        <Image HorizontalAlignment="Left" Height="315" Margin="505,10,0,0" VerticalAlignment="Top" Width="370" Source="/WpfChickenApplication;component/Resources/Level1Images/арбуз.png" RenderTransformOrigin="0.297,0.365"/>
+        <Button x:Name="nextButton" Content="        Продолжить" HorizontalAlignment="Left" Margin="790,610,0,0" VerticalAlignment="Top" Width="430" Height="122" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="nextButton_Click"/>
+        <Image x:Name="Word" HorizontalAlignment="Left" Height="315" Margin="505,10,0,0" VerticalAlignment="Top" Width="370" Source="/WpfChickenApplication;component/Resources/Level1Images/арбуз.png" RenderTransformOrigin="0.297,0.365"/>
     </Grid>
     <Window.Resources>
         <GradientStopCollection x:Key="MyGlassGradientStopsResource">

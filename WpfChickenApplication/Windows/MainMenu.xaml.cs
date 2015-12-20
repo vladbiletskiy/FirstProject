@@ -49,5 +49,10 @@ namespace WpfChickenApplication.Windows
             FileStream fs = new FileStream("acc_base.bin", FileMode.OpenOrCreate);
             formatter.Serialize(fs, LoginWindow.Account_List);
         }
+        private void level1Button_Click(object sender, RoutedEventArgs e)
+        {
+            Level1Selecter ls = new Level1Selecter();
+            ls.Show();
+        }
     }
 }

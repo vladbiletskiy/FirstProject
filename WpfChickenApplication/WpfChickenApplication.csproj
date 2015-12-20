@@ -62,6 +62,9 @@
     <Compile Include="Windows\Level1.xaml.cs">
       <DependentUpon>Level1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Level1Selecter.xaml.cs">
+      <DependentUpon>Level1Selecter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
@@ -80,6 +83,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Level1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Level1Selecter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -213,6 +220,40 @@
     <Resource Include="Resources\Letters\я.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\LevelNumbers\01.png" />
+    <Resource Include="Resources\LevelNumbers\02.png" />
+    <Resource Include="Resources\LevelNumbers\03.png" />
+    <Resource Include="Resources\LevelNumbers\04.png" />
+    <Resource Include="Resources\LevelNumbers\05.png" />
+    <Resource Include="Resources\LevelNumbers\06.png" />
+    <Resource Include="Resources\LevelNumbers\07.png" />
+    <Resource Include="Resources\LevelNumbers\08.png" />
+    <Resource Include="Resources\LevelNumbers\09.png" />
+    <Resource Include="Resources\LevelNumbers\10.png" />
+    <Resource Include="Resources\LevelNumbers\11.png" />
+    <Resource Include="Resources\LevelNumbers\12.png" />
+    <Resource Include="Resources\LevelNumbers\13.png" />
+    <Resource Include="Resources\LevelNumbers\14.png" />
+    <Resource Include="Resources\LevelNumbers\15.png" />
+    <Resource Include="Resources\LevelNumbers\16.png" />
+    <Resource Include="Resources\LevelNumbers\17.png" />
+    <Resource Include="Resources\LevelNumbers\18.png" />
+    <Resource Include="Resources\LevelNumbers\19.png" />
+    <Resource Include="Resources\LevelNumbers\20.png" />
+    <Resource Include="Resources\LevelNumbers\21.png" />
+    <Resource Include="Resources\LevelNumbers\22.png" />
+    <Resource Include="Resources\LevelNumbers\23.png" />
+    <Resource Include="Resources\LevelNumbers\24.png" />
+    <Resource Include="Resources\LevelNumbers\25.png" />
+    <Resource Include="Resources\LevelNumbers\26.png" />
+    <Resource Include="Resources\LevelNumbers\27.png" />
+    <Resource Include="Resources\LevelNumbers\28.png" />
+    <Resource Include="Resources\LevelNumbers\29.png" />
+    <Resource Include="Resources\LevelNumbers\30.png" />
+    <Resource Include="Resources\LevelNumbers\31.png" />
+    <Resource Include="Resources\LevelNumbers\32.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Resources\Level1Images\ёжик.png" />
     <Resource Include="Resources\Level1Images\арбуз.png" />
     <Resource Include="Resources\Level1Images\баран.png" />
@@ -228,8 +269,10 @@
     <Resource Include="Resources\Level1Images\лев.png" />
     <Resource Include="Resources\Level1Images\малина.png" />
     <Resource Include="Resources\Level1Images\носорог.png" />
+    <Resource Include="Resources\Level1Images\объявление.png" />
     <Resource Include="Resources\Level1Images\осёл.png" />
     <Resource Include="Resources\Level1Images\петух.png" />
+    <Resource Include="Resources\Level1Images\печенье.png" />
     <Resource Include="Resources\Level1Images\рак.png" />
     <Resource Include="Resources\Level1Images\сундук.png" />
     <Resource Include="Resources\Level1Images\торт.png" />
@@ -239,14 +282,14 @@
     <Resource Include="Resources\Level1Images\цыплёнок.png" />
     <Resource Include="Resources\Level1Images\чашка.png" />
     <Resource Include="Resources\Level1Images\шарик.png" />
-    <Resource Include="Resources\Level1Images\ъобъявление.png" />
-    <Resource Include="Resources\Level1Images\ьпеченье.png" />
+    <Resource Include="Resources\Level1Images\щётка.png" />
     <Resource Include="Resources\Level1Images\эскимо.png" />
     <Resource Include="Resources\Level1Images\юбка.png" />
     <Resource Include="Resources\Level1Images\яблоко.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Level1Images\щётка.png" />
+    <Resource Include="Resources\Backgrounds\rightAnswer.png" />
+    <Resource Include="Resources\Backgrounds\wrongAnswer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
