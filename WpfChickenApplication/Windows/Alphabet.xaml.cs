@@ -26,5 +26,15 @@ namespace WpfChickenApplication.Windows
         {
             this.Close();
         }
+        private void letter_MouseEnter(object sender, MouseEventArgs e)
+        {
+            System.Windows.Media.Effects.DropShadowEffect effect = new System.Windows.Media.Effects.DropShadowEffect();
+            effect.ShadowDepth = 15;
+            ((Image)sender).Effect = effect;
+        }
+        private void letter_MouseLeave(object sender, MouseEventArgs e)
+        {
+            ((Image)sender).Effect = null;
+        }
     }
 }

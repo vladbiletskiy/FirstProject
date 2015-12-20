@@ -4,173 +4,45 @@
         Title="Alphabet" Height="768" Width="1366"
         WindowStyle="None" WindowState="Maximized">
     <Grid>
-        <Image x:Name="А" HorizontalAlignment="Left" Height="108" Margin="80,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/А.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="З" HorizontalAlignment="Left" Height="108" Margin="156,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/З.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="П" HorizontalAlignment="Left" Height="108" Margin="103,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/П.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ш" HorizontalAlignment="Left" Height="108" Margin="179,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ш.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Б" HorizontalAlignment="Left" Height="108" Margin="218,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Б.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="И" HorizontalAlignment="Left" Height="108" Margin="294,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/И.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Р" HorizontalAlignment="Left" Height="108" Margin="241,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Р.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Щ" HorizontalAlignment="Left" Height="108" Margin="317,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Щ.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="В" HorizontalAlignment="Left" Height="108" Margin="363,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/В.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Й" HorizontalAlignment="Left" Height="108" Margin="439,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Й.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="С" HorizontalAlignment="Left" Height="108" Margin="386,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/С.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ъ" HorizontalAlignment="Left" Height="108" Margin="462,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ъ.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Г" HorizontalAlignment="Left" Height="108" Margin="509,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Г.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="К" HorizontalAlignment="Left" Height="108" Margin="585,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/К.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Т" HorizontalAlignment="Left" Height="108" Margin="532,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Т.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ы" HorizontalAlignment="Left" Height="108" Margin="608,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ы.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Д" HorizontalAlignment="Left" Height="108" Margin="660,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Д.png" RenderTransformOrigin="0.5,0.5" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Л" HorizontalAlignment="Left" Height="108" Margin="736,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Л.png" RenderTransformOrigin="0.5,0.5" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="У" HorizontalAlignment="Left" Height="108" Margin="683,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/У.png" RenderTransformOrigin="0.5,0.5" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ь" HorizontalAlignment="Left" Height="108" Margin="759,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ь.png" RenderTransformOrigin="0.5,0.5" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Е" HorizontalAlignment="Left" Height="108" Margin="810,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Е.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="М" HorizontalAlignment="Left" Height="108" Margin="886,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/М.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ф" HorizontalAlignment="Left" Height="108" Margin="833,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ф.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Э" HorizontalAlignment="Left" Height="108" Margin="909,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Э.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ё" HorizontalAlignment="Left" Height="108" Margin="954,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ё.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Н" HorizontalAlignment="Left" Height="108" Margin="1030,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Н.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Х" HorizontalAlignment="Left" Height="108" Margin="977,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Х.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ю" HorizontalAlignment="Left" Height="108" Margin="1053,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ю.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ж" HorizontalAlignment="Left" Height="108" Margin="1099,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ж.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="О" HorizontalAlignment="Left" Height="108" Margin="1175,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/О.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ц" HorizontalAlignment="Left" Height="108" Margin="1122,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ц.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Я" HorizontalAlignment="Left" Height="108" Margin="1198,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Я.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Image x:Name="Ч" HorizontalAlignment="Left" Height="108" Margin="45,515,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ч.png" >
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Button x:Name="backButton" Content="             Назад" HorizontalAlignment="Left" Margin="53,662,0,0" VerticalAlignment="Top" Width="392" Height="82" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="backButton_Click" />
-        <Button x:Name="nextButton" Content="        Продолжить" HorizontalAlignment="Left" Margin="810,662,0,0" VerticalAlignment="Top" Width="392" Height="82" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="А" HorizontalAlignment="Left" Height="108" Margin="80,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/А.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave" />
+        <Image x:Name="З" HorizontalAlignment="Left" Height="108" Margin="156,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/З.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave" />
+        <Image x:Name="П" HorizontalAlignment="Left" Height="108" Margin="103,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/П.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ш" HorizontalAlignment="Left" Height="108" Margin="179,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ш.png" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Б" HorizontalAlignment="Left" Height="108" Margin="218,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Б.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="И" HorizontalAlignment="Left" Height="108" Margin="294,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/И.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Р" HorizontalAlignment="Left" Height="108" Margin="241,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Р.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Щ" HorizontalAlignment="Left" Height="108" Margin="317,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Щ.png" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="В" HorizontalAlignment="Left" Height="108" Margin="363,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/В.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Й" HorizontalAlignment="Left" Height="108" Margin="439,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Й.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="С" HorizontalAlignment="Left" Height="108" Margin="386,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/С.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ъ" HorizontalAlignment="Left" Height="108" Margin="462,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ъ.png" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Г" HorizontalAlignment="Left" Height="108" Margin="509,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Г.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="К" HorizontalAlignment="Left" Height="108" Margin="585,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/К.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Т" HorizontalAlignment="Left" Height="108" Margin="532,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Т.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ы" HorizontalAlignment="Left" Height="108" Margin="608,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ы.png" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Д" HorizontalAlignment="Left" Height="108" Margin="660,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Д.png" RenderTransformOrigin="0.5,0.5" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Л" HorizontalAlignment="Left" Height="108" Margin="736,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Л.png" RenderTransformOrigin="0.5,0.5" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave" />
+        <Image x:Name="У" HorizontalAlignment="Left" Height="108" Margin="683,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/У.png" RenderTransformOrigin="0.5,0.5" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ь" HorizontalAlignment="Left" Height="108" Margin="759,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ь.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Е" HorizontalAlignment="Left" Height="108" Margin="810,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Е.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="М" HorizontalAlignment="Left" Height="108" Margin="886,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/М.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ф" HorizontalAlignment="Left" Height="108" Margin="833,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ф.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Э" HorizontalAlignment="Left" Height="108" Margin="909,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Э.png" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ё" HorizontalAlignment="Left" Height="108" Margin="954,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ё.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Н" HorizontalAlignment="Left" Height="108" Margin="1030,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Н.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Х" HorizontalAlignment="Left" Height="108" Margin="977,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Х.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ю" HorizontalAlignment="Left" Height="108" Margin="1053,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ю.png" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ж" HorizontalAlignment="Left" Height="108" Margin="1099,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ж.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="О" HorizontalAlignment="Left" Height="108" Margin="1175,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/О.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ц" HorizontalAlignment="Left" Height="108" Margin="1122,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ц.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Я" HorizontalAlignment="Left" Height="108" Margin="1198,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Я.png" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Image x:Name="Ч" HorizontalAlignment="Left" Height="108" Margin="45,45,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LetterButtons/Ч.png" Grid.Row="1" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave"/>
+        <Button x:Name="backButton" Content="             Назад" HorizontalAlignment="Left" Margin="53,192,0,0" VerticalAlignment="Top" Width="392" Height="82" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="backButton_Click" Grid.Row="1"/>
+        <Button x:Name="nextButton" Content="        Продолжить" HorizontalAlignment="Left" Margin="810,192,0,0" VerticalAlignment="Top" Width="392" Height="82" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Grid.Row="1"/>
     </Grid>
     <Window.Resources>
         <GradientStopCollection x:Key="MyGlassGradientStopsResource">
