@@ -16,7 +16,7 @@ namespace WpfChickenApplication
     {
         Name = n;
         Level_Avalible = 0;
-        Task_Avalible = 0;
+        Task_Avalible = 1;
     }
     }
 }

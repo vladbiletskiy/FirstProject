@@ -21,6 +21,7 @@ namespace WpfChickenApplication.Windows
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
             nameLabel.Content = acc.Name;
+            scoreLabel.Content = "Уровень: " + acc.Level_Avalible + ", задание: " + acc.Task_Avalible;
         }
         private void exitButton_Click(object sender, RoutedEventArgs e)
         {

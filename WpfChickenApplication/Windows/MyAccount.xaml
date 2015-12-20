@@ -5,7 +5,7 @@
         WindowStyle="None" WindowState="Maximized" FontFamily="Palatino Linotype" FontSize="48" FontWeight="Bold" FontStyle="Italic">
     <Grid>
         <Label Content="Имя:" HorizontalAlignment="Left" Margin="220,175,0,0" VerticalAlignment="Top"/>
-        <Label Content="Пройдено уровней:" HorizontalAlignment="Left" Margin="220,295,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пройденный уровень:" HorizontalAlignment="Left" Margin="220,295,0,0" VerticalAlignment="Top"/>
         <Label Content="Итог:" HorizontalAlignment="Left" Margin="220,430,0,0" VerticalAlignment="Top"/>
         <Label x:Name="nameLabel" Content="Label" HorizontalAlignment="Left" Margin="410,175,0,0" VerticalAlignment="Top"/>
         <Label x:Name="scoreLabel" Content="Label" HorizontalAlignment="Left" Margin="721,295,0,0" VerticalAlignment="Top"/>

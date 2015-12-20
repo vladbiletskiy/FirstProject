@@ -17,7 +17,7 @@ namespace WpfChickenApplication.Windows
 
     public partial class Alphabet : Window
     {
-        public Alphabet(Account acc)
+        public Alphabet()
         {
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
@@ -35,6 +35,17 @@ namespace WpfChickenApplication.Windows
         private void letter_MouseLeave(object sender, MouseEventArgs e)
         {
             ((Image)sender).Effect = null;
+        }
+
+        private void letter_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            LetterView lv = new LetterView(((Image)sender).Name);
+            lv.Show();
+        }
+
+        private void nextButton_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

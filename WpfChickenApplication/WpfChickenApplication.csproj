@@ -56,6 +56,12 @@
     <Compile Include="Windows\Alphabet.xaml.cs">
       <DependentUpon>Alphabet.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\LetterView.xaml.cs">
+      <DependentUpon>LetterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Level1.xaml.cs">
+      <DependentUpon>Level1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
@@ -66,6 +72,14 @@
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Windows\Alphabet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\LetterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Level1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -197,6 +211,42 @@
     <Resource Include="Resources\Letters\э.png" />
     <Resource Include="Resources\Letters\ю.png" />
     <Resource Include="Resources\Letters\я.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Level1Images\ёжик.png" />
+    <Resource Include="Resources\Level1Images\арбуз.png" />
+    <Resource Include="Resources\Level1Images\баран.png" />
+    <Resource Include="Resources\Level1Images\вишня.png" />
+    <Resource Include="Resources\Level1Images\груша.png" />
+    <Resource Include="Resources\Level1Images\диван.png" />
+    <Resource Include="Resources\Level1Images\енот.png" />
+    <Resource Include="Resources\Level1Images\жук.png" />
+    <Resource Include="Resources\Level1Images\зебра.png" />
+    <Resource Include="Resources\Level1Images\индюк.png" />
+    <Resource Include="Resources\Level1Images\йогурт.png" />
+    <Resource Include="Resources\Level1Images\курица.png" />
+    <Resource Include="Resources\Level1Images\лев.png" />
+    <Resource Include="Resources\Level1Images\малина.png" />
+    <Resource Include="Resources\Level1Images\носорог.png" />
+    <Resource Include="Resources\Level1Images\осёл.png" />
+    <Resource Include="Resources\Level1Images\петух.png" />
+    <Resource Include="Resources\Level1Images\рак.png" />
+    <Resource Include="Resources\Level1Images\сундук.png" />
+    <Resource Include="Resources\Level1Images\торт.png" />
+    <Resource Include="Resources\Level1Images\утка.png" />
+    <Resource Include="Resources\Level1Images\фокусник.png" />
+    <Resource Include="Resources\Level1Images\хлеб.png" />
+    <Resource Include="Resources\Level1Images\цыплёнок.png" />
+    <Resource Include="Resources\Level1Images\чашка.png" />
+    <Resource Include="Resources\Level1Images\шарик.png" />
+    <Resource Include="Resources\Level1Images\ъобъявление.png" />
+    <Resource Include="Resources\Level1Images\ьпеченье.png" />
+    <Resource Include="Resources\Level1Images\эскимо.png" />
+    <Resource Include="Resources\Level1Images\юбка.png" />
+    <Resource Include="Resources\Level1Images\яблоко.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Level1Images\щётка.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

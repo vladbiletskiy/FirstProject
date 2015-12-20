@@ -11,12 +11,14 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace WpfChickenApplication.Windows
 {
     public partial class MainMenu : Window
     {
-        Account CurrentAcc;
+        public static Account CurrentAcc;
         string[] images = new string[] { "pack://application:,,,/Resources/Menu/обучалка.png", "pack://application:,,,/Resources/Menu/уровень1.png", "pack://application:,,,/Resources/Menu/уровень2.png", "pack://application:,,,/Resources/Menu/уровень3.png" };
         public MainMenu(Account acc)
         {
@@ -36,8 +38,16 @@ namespace WpfChickenApplication.Windows
         }
         private void level0Button_Click(object sender, RoutedEventArgs e)
         {
-            Alphabet al = new Alphabet(CurrentAcc);
+            Alphabet al = new Alphabet();
             al.Show();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            LoginWindow.Account_List[LoginWindow.Account_List.IndexOf(CurrentAcc)] = CurrentAcc;
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream fs = new FileStream("acc_base.bin", FileMode.OpenOrCreate);
+            formatter.Serialize(fs, LoginWindow.Account_List);
         }
     }
 }
