@@ -18,10 +18,10 @@ using WpfChickenApplication.Windows;
 
 namespace WpfChickenApplication
 {
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
         public static AccountList Account_List;
-        public MainWindow()
+        public LoginWindow()
         {
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
@@ -43,13 +43,15 @@ namespace WpfChickenApplication
         }
         private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if(MessageBox.Show("Выйти из программы?","Выход",MessageBoxButton.OKCancel)==MessageBoxResult.OK)
+            if (MessageBox.Show("Выйти из программы?", "Выход", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
                 Application.Current.Shutdown();
         }
         private void registerButton_Click(object sender, RoutedEventArgs e)
         {
-            RegisterWindow rw = new RegisterWindow();
-            rw.ShowDialog();
+            RegisterWindow rf = new RegisterWindow();
+            this.Hide();
+            rf.ShowDialog();
+            this.Show();
             if (Account_List.Count!=0&&!nameBox.Items.Contains(Account_List.Last().Name)) nameBox.Items.Add(Account_List.Last().Name);
         }
         private void loginButton_Click(object sender, RoutedEventArgs e)
@@ -63,7 +65,16 @@ namespace WpfChickenApplication
             }
             mm = new MainMenu(acc);
             this.Hide();
-            mm.Show();
+            mm.ShowDialog();
+            this.Show();
+        }
+        private void Ellipse_MouseEnter(object sender, MouseEventArgs e)
+        {
+            exitButton.StrokeThickness = 5;
+        }
+        private void Ellipse_MouseLeave(object sender, MouseEventArgs e)
+        {
+            exitButton.StrokeThickness = 1;
         }
     }
 }
