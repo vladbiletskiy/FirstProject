@@ -14,20 +14,18 @@ using System.Windows.Shapes;
 
 namespace WpfChickenApplication.Windows
 {
-
-    public partial class Alphabet : Window
+    public partial class Level2Selecter : Window
     {
-        string alph = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
-        public Alphabet()
+        public Level2Selecter()
         {
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
-            if (MainMenu.CurrentAcc.Level_Avalible < 1)
+            if (MainMenu.CurrentAcc.Level_Avalible < 3)
                 foreach (var element in Board.Children)
                 {
                     if (element is Image)
                     {
-                        if (alph.IndexOf(((Image)element).Name.ToLowerInvariant()[0]) > MainMenu.CurrentAcc.Task_Avalible)
+                        if (int.Parse(((Image)element).Name.Substring(6)) > MainMenu.CurrentAcc.Task_Avalible)
                         {
                             ((Image)element).Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Backgrounds/lock.png"));
                             ((Image)element).MouseDown -= letter_MouseDown;
@@ -52,18 +50,18 @@ namespace WpfChickenApplication.Windows
         }
         private void letter_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            LetterView lv = new LetterView(((Image)sender).Name);
-            lv.Show();
+            Level2 l = new Level2(Convert.ToInt16(((Image)sender).Name.Substring(6)));
+            l.Show();
             this.Close();
         }
         private void locked_MouseDown(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Задание еще закрыто! Пройдите предыдущее задание");
+            MessageBox.Show("Задание еще не открыто! Пройдите предыдущее задание для разблокировки");
             return;
         }
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }

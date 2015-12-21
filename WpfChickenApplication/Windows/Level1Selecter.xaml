@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Level1Selecter" Height="768" Width="1366"
         WindowStyle="None" WindowState="Maximized">
-    <Grid>
+    <Grid x:Name="Board">
         <Image x:Name="Button1" HorizontalAlignment="Left" Height="108" Margin="80,32,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LevelNumbers/01.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave" MouseDown="letter_MouseDown"/>
         <Image x:Name="Button9" HorizontalAlignment="Left" Height="108" Margin="156,195,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LevelNumbers/09.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave" MouseDown="letter_MouseDown"/>
         <Image x:Name="Button17" HorizontalAlignment="Left" Height="108" Margin="103,355,0,0" VerticalAlignment="Top" Width="70" Source="/WpfChickenApplication;component/Resources/LevelNumbers/17.png" MouseEnter="letter_MouseEnter" MouseLeave="letter_MouseLeave" MouseDown="letter_MouseDown"/>

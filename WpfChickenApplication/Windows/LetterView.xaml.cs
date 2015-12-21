@@ -25,7 +25,7 @@ namespace WpfChickenApplication.Windows
             ColorScheme.GetColorScheme(this);
             Letter.Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Letters/"+s+".png"));
             currentIndex = alph.IndexOf(s[0]);
-            if (MainMenu.CurrentAcc.Task_Avalible <= currentIndex + 1)
+            if (MainMenu.CurrentAcc.Task_Avalible <= currentIndex + 1 && MainMenu.CurrentAcc.Level_Avalible < 3)
             {
                 if (alph.IndexOf(s[0]) != alph.Length - 1) MainMenu.CurrentAcc.Task_Avalible =currentIndex+1;
                 else
@@ -37,10 +37,13 @@ namespace WpfChickenApplication.Windows
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
+            Alphabet a = new Alphabet();
+            a.Show();
             this.Close();
         }
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
+            if (currentIndex+1 > 32) return;
             LetterView next = new LetterView(Convert.ToString(alph[currentIndex+1]));
             next.Show();
             this.Close();

@@ -1,7 +1,7 @@
-﻿<Window x:Class="WpfChickenApplication.Windows.Level1"
+﻿<Window x:Class="WpfChickenApplication.Windows.Level2"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Level1" Height="768" Width="1366"
+        Title="Level2" Height="768" Width="1366"
         WindowStyle="None" WindowState="Maximized">
     <Grid Name="Board">
         <Button x:Name="backButton" Content="             Назад" HorizontalAlignment="Left" Margin="71,610,0,0" VerticalAlignment="Top" Width="429" Height="122" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="backButton_Click"/>

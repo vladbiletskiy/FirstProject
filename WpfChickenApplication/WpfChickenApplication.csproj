@@ -65,6 +65,12 @@
     <Compile Include="Windows\Level1Selecter.xaml.cs">
       <DependentUpon>Level1Selecter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Level2.xaml.cs">
+      <DependentUpon>Level2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Level2Selecter.xaml.cs">
+      <DependentUpon>Level2Selecter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
@@ -87,6 +93,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Level1Selecter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Level2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Level2Selecter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -290,6 +304,31 @@
   <ItemGroup>
     <Resource Include="Resources\Backgrounds\rightAnswer.png" />
     <Resource Include="Resources\Backgrounds\wrongAnswer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Backgrounds\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Level2Images\ветер.png" />
+    <Resource Include="Resources\Level2Images\врач.png" />
+    <Resource Include="Resources\Level2Images\дождь.png" />
+    <Resource Include="Resources\Level2Images\квадрат.png" />
+    <Resource Include="Resources\Level2Images\конфета.png" />
+    <Resource Include="Resources\Level2Images\круг.png" />
+    <Resource Include="Resources\Level2Images\кукла.png" />
+    <Resource Include="Resources\Level2Images\машина.png" />
+    <Resource Include="Resources\Level2Images\пиджак.png" />
+    <Resource Include="Resources\Level2Images\платье.png" />
+    <Resource Include="Resources\Level2Images\повар.png" />
+    <Resource Include="Resources\Level2Images\подарок.png" />
+    <Resource Include="Resources\Level2Images\пожарник.png" />
+    <Resource Include="Resources\Level2Images\робот.png" />
+    <Resource Include="Resources\Level2Images\солнце.png" />
+    <Resource Include="Resources\Level2Images\стул.png" />
+    <Resource Include="Resources\Level2Images\тарелка.png" />
+    <Resource Include="Resources\Level2Images\треугольник.png" />
+    <Resource Include="Resources\Level2Images\чайник.png" />
+    <Resource Include="Resources\Level2Images\шкаф.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

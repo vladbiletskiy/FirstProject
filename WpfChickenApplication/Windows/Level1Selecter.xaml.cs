@@ -20,6 +20,19 @@ namespace WpfChickenApplication.Windows
         {
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
+             if (MainMenu.CurrentAcc.Level_Avalible < 2)
+                 foreach (var element in Board.Children)
+                 {
+                     if (element is Image)
+                     {
+                         if (int.Parse(((Image)element).Name.Substring(6)) > MainMenu.CurrentAcc.Task_Avalible)
+                         {
+                             ((Image)element).Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Backgrounds/lock.png"));
+                             ((Image)element).MouseDown -= letter_MouseDown;
+                             ((Image)element).MouseDown += locked_MouseDown;
+                         }
+                     }
+                 }
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
@@ -39,6 +52,12 @@ namespace WpfChickenApplication.Windows
         {
             Level1 l=new Level1(Convert.ToInt16(((Image)sender).Name.Substring(6)));
             l.Show();
+            this.Close();
+        }
+        private void locked_MouseDown(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Задание еще не открыто! Пройдите предыдущее задание для разблокировки");
+            return;
         }
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {

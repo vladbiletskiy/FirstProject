@@ -14,9 +14,10 @@ using System.Windows.Shapes;
 
 namespace WpfChickenApplication.Windows
 {
-    public partial class Level1 : Window
+    public partial class Level2 : Window
     {
-        string[] images = System.IO.Directory.GetFiles("../../Resources/Level1Images");
+        string[] images = System.IO.Directory.GetFiles("../../Resources/Level2Images");
+
         string name;
         bool[] right;
         object Captured = null;
@@ -24,17 +25,20 @@ namespace WpfChickenApplication.Windows
         List<Image> Boxes = new List<Image>();
         List<Image> Letters = new List<Image>();
         Point prevPoint;
-        public Level1(int num)
+        public Level2(int num)
         {
+            
             Random rand = new Random();
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
             for (int i = 0; i < images.Length; i++)
             {
-                images[i] = "pack://application:,,,/Resources/Level1Images/" + images[i].Substring(29);
+                images[i] = "pack://application:,,,/Resources/Level2Images/" + images[i].Substring(29);
             }
-            name=images[num-1].Substring(46,images[num-1].Length-50);
-            Word.Source = new BitmapImage(new Uri(images[num-1]));
+            name = images[num - 1].Substring(46, images[num - 1].Length - 50);
+            string alph = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+            alph = new String(alph.Except(name).ToArray()).ToUpperInvariant();
+            Word.Source = new BitmapImage(new Uri(images[num - 1]));
             currentIndex = num;
             name = name.ToUpperInvariant();
             right = new bool[name.Length];
@@ -46,7 +50,7 @@ namespace WpfChickenApplication.Windows
                 ((Image)Board.Children[Board.Children.Count - 1]).Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Backgrounds/wrongAnswer.png"));
                 ((Image)Board.Children[Board.Children.Count - 1]).Width = 123;
                 ((Image)Board.Children[Board.Children.Count - 1]).Height = 160;
-                ((Image)Board.Children[Board.Children.Count - 1]).Margin = new Thickness((i - 4.5) * 250, 140, 0,0);
+                ((Image)Board.Children[Board.Children.Count - 1]).Margin = new Thickness((i - 4.5) * 250, 140, 0, 0);
                 Boxes.Add((Image)Board.Children[Board.Children.Count - 1]);
             }
             #endregion
@@ -59,7 +63,20 @@ namespace WpfChickenApplication.Windows
                 ((Image)Board.Children[Board.Children.Count - 1]).Width = 93;
                 ((Image)Board.Children[Board.Children.Count - 1]).Height = 140;
                 ((Image)Board.Children[Board.Children.Count - 1]).Margin = new Thickness(rand.Next(670), rand.Next(370), rand.Next(600), rand.Next(300));
-                ((Image)Board.Children[Board.Children.Count - 1]).MouseDown+=letter_MouseDown;
+                ((Image)Board.Children[Board.Children.Count - 1]).MouseDown += letter_MouseDown;
+                Letters.Add((Image)Board.Children[Board.Children.Count - 1]);
+            }
+            #endregion
+            #region создание дополнительных случайных букв (не содержащихся в слове)
+            for (int i = 0; i < 4; i++)
+            {
+                Board.Children.Add(new Image());
+                ((Image)Board.Children[Board.Children.Count - 1]).Name = "Letter" + (name.Length+i);
+                ((Image)Board.Children[Board.Children.Count - 1]).Source = new BitmapImage(new Uri("pack://application:,,,/Resources/LetterButtons/" + alph[rand.Next(0,alph.Length)] + ".png"));
+                ((Image)Board.Children[Board.Children.Count - 1]).Width = 93;
+                ((Image)Board.Children[Board.Children.Count - 1]).Height = 140;
+                ((Image)Board.Children[Board.Children.Count - 1]).Margin = new Thickness(rand.Next(670), rand.Next(370), rand.Next(600), rand.Next(300));
+                ((Image)Board.Children[Board.Children.Count - 1]).MouseDown += letter_MouseDown;
                 Letters.Add((Image)Board.Children[Board.Children.Count - 1]);
             }
             #endregion
@@ -87,7 +104,7 @@ namespace WpfChickenApplication.Windows
                             right[Convert.ToInt16(box.Name.Substring(3))] = true;
                             break;
                         }
-                        else if (name[int.Parse(box.Name.Substring(3))] == name[int.Parse(((Image)Captured).Name.Substring(6))])
+                        else if (int.Parse(((Image)Captured).Name.Substring(6))<name.Length&&name[int.Parse(box.Name.Substring(3))] == name[int.Parse(((Image)Captured).Name.Substring(6))])
                         {
                             Thickness temp = ((Image)Captured).Margin;
                             ((Image)Captured).Margin = Letters[int.Parse(box.Name.Substring(3))].Margin;
@@ -95,7 +112,7 @@ namespace WpfChickenApplication.Windows
                             //ЗАКРОЙМЕНЯ!!!!!
                         }
                     }
-                    else right[Convert.ToInt16(((Image)Captured).Name.Substring(6))] = false;
+                    else if(int.Parse(((Image)Captured).Name.Substring(6))<name.Length) right[Convert.ToInt16(((Image)Captured).Name.Substring(6))] = false;
                 }
                 for (int i = 0; i < right.Length; i++)
                 {
@@ -111,12 +128,12 @@ namespace WpfChickenApplication.Windows
             if (Captured != null)
             {
                 Point p = e.GetPosition(Board);
-                ((Image)Captured).Margin = new Thickness(p.X, p.Y, this.Width - p.X - ((Image)Captured).ActualWidth - 20, this.Height - p.Y - ((Image)Captured).ActualHeight - 20);                
+                ((Image)Captured).Margin = new Thickness(p.X, p.Y, this.Width - p.X - ((Image)Captured).ActualWidth - 20, this.Height - p.Y - ((Image)Captured).ActualHeight - 20);
             }
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            Level1Selecter l = new Level1Selecter();
+            Level2Selecter l = new Level2Selecter();
             l.Show();
             this.Close();
         }
@@ -124,7 +141,7 @@ namespace WpfChickenApplication.Windows
         {
             if (currentIndex < images.Length)
             {
-                Level1 l = new Level1(currentIndex+1);
+                Level2 l = new Level2(currentIndex + 1);
                 l.Show();
                 this.Close();
             }
@@ -140,9 +157,9 @@ namespace WpfChickenApplication.Windows
         private bool IsAllRight()
         {
             foreach (bool element in right) if (!element) return false;
-            if (MainMenu.CurrentAcc.Task_Avalible <= currentIndex + 1 && MainMenu.CurrentAcc.Level_Avalible < 2)
+            if (MainMenu.CurrentAcc.Task_Avalible <= currentIndex + 1&&MainMenu.CurrentAcc.Level_Avalible<3)
             {
-                if (currentIndex<31) MainMenu.CurrentAcc.Task_Avalible = currentIndex + 1;
+                if (currentIndex < 19) MainMenu.CurrentAcc.Task_Avalible = currentIndex + 1;
                 else
                 {
                     MainMenu.CurrentAcc.Task_Avalible = 1;

@@ -41,7 +41,6 @@ namespace WpfChickenApplication.Windows
             Alphabet al = new Alphabet();
             al.Show();
         }
-
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             LoginWindow.Account_List[LoginWindow.Account_List.IndexOf(CurrentAcc)] = CurrentAcc;
@@ -51,7 +50,22 @@ namespace WpfChickenApplication.Windows
         }
         private void level1Button_Click(object sender, RoutedEventArgs e)
         {
+            if (CurrentAcc.Level_Avalible < 1)
+            {
+                MessageBox.Show("Уровень недоступен, сначала пройдите обучение");
+                return;
+            }
             Level1Selecter ls = new Level1Selecter();
+            ls.Show();
+        }
+        private void level2Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (CurrentAcc.Level_Avalible < 2)
+            {
+                MessageBox.Show("Уровень недоступен, сначала пройдите обучение");
+                return;
+            }
+            Level2Selecter ls = new Level2Selecter();
             ls.Show();
         }
     }
