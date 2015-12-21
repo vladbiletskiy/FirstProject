@@ -18,10 +18,18 @@ namespace WpfChickenApplication.Windows
     {
         public MyAccount(Account acc)
         {
+            int[] total = new int[] { 33, 32, 20 };
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
             nameLabel.Content = acc.Name;
             scoreLabel.Content = "Уровень: " + acc.Level_Avalible + ", задание: " + acc.Task_Avalible;
+            double t = 0;
+            for (int i = 0; i < acc.Level_Avalible; i++)
+            {
+                t += total[i];
+            }
+            t += acc.Task_Avalible;
+            totalLabel.Content = Math.Round(((t / (33 + 32 + 20)) * 100)) + "%";
         }
         private void exitButton_Click(object sender, RoutedEventArgs e)
         {

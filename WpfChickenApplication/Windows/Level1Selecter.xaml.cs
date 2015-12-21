@@ -61,7 +61,16 @@ namespace WpfChickenApplication.Windows
         }
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (MainMenu.CurrentAcc.Level_Avalible == 1)
+            {
+                Level1 l = new Level1(MainMenu.CurrentAcc.Task_Avalible);
+                l.Show();
+            }
+            else
+            {
+                MessageBox.Show("Вы уже прошли все задания данного уровня!");
+            }
+            this.Close();
         }
     }
 }

@@ -4,12 +4,12 @@
         Title="MyAccount" Height="768" Width="1366"
         WindowStyle="None" WindowState="Maximized" FontFamily="Palatino Linotype" FontSize="48" FontWeight="Bold" FontStyle="Italic">
     <Grid>
-        <Label Content="Имя:" HorizontalAlignment="Left" Margin="220,175,0,0" VerticalAlignment="Top"/>
-        <Label Content="Пройденный уровень:" HorizontalAlignment="Left" Margin="220,295,0,0" VerticalAlignment="Top"/>
-        <Label Content="Итог:" HorizontalAlignment="Left" Margin="220,430,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="nameLabel" Content="Label" HorizontalAlignment="Left" Margin="410,175,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="scoreLabel" Content="Label" HorizontalAlignment="Left" Margin="721,295,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="totalLabel" Content="Label" HorizontalAlignment="Left" Margin="410,430,0,0" VerticalAlignment="Top"/>
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="75,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Последнее доступное задание:" HorizontalAlignment="Left" Margin="75,285,0,0" VerticalAlignment="Top"/>
+        <Label Content="Итог:" HorizontalAlignment="Left" Margin="75,420,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="nameLabel" Content="Label" HorizontalAlignment="Left" Margin="265,165,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="scoreLabel" Content="Label" HorizontalAlignment="Left" Margin="829,285,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="totalLabel" Content="Label" HorizontalAlignment="Left" Margin="265,420,0,0" VerticalAlignment="Top"/>
         <Button x:Name="exitButton" Content="          Выйти" HorizontalAlignment="Left" Margin="165,545,0,0" VerticalAlignment="Top" Width="425" Height="135" FontFamily="Palatino Linotype" FontSize="48" FontWeight="Bold" FontStyle="Italic" Click="exitButton_Click"/>
         <Button x:Name="backButton" Content="       Вернуться" HorizontalAlignment="Left" Margin="785,545,0,0" VerticalAlignment="Top" Width="425" Height="135" FontFamily="Palatino Linotype" FontSize="48" FontWeight="Bold" FontStyle="Italic" Click="backButton_Click"/>
     </Grid>

@@ -63,7 +63,16 @@ namespace WpfChickenApplication.Windows
         }
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (MainMenu.CurrentAcc.Level_Avalible == 0)
+            {
+                LetterView lv = new LetterView(alph[MainMenu.CurrentAcc.Task_Avalible].ToString().ToUpperInvariant());
+                lv.Show();
+            }
+            else
+            {
+                MessageBox.Show("Вы уже прошли все задания данного уровня!");
+            }
+            this.Close();
         }
     }
 }
