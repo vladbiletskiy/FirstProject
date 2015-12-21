@@ -323,10 +323,10 @@
     <Resource Include="Resources\Level2Images\подарок.png" />
     <Resource Include="Resources\Level2Images\пожарник.png" />
     <Resource Include="Resources\Level2Images\робот.png" />
+    <Resource Include="Resources\Level2Images\ромб.png" />
     <Resource Include="Resources\Level2Images\солнце.png" />
     <Resource Include="Resources\Level2Images\стул.png" />
     <Resource Include="Resources\Level2Images\тарелка.png" />
-    <Resource Include="Resources\Level2Images\треугольник.png" />
     <Resource Include="Resources\Level2Images\чайник.png" />
     <Resource Include="Resources\Level2Images\шкаф.png" />
   </ItemGroup>
