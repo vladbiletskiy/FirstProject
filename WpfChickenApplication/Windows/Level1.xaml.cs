@@ -36,7 +36,7 @@ namespace WpfChickenApplication.Windows
             name=images[num-1].Substring(46,images[num-1].Length-50);
             Word.Source = new BitmapImage(new Uri(images[num-1]));
             player.Source = new Uri("Resources/Level1Sounds/" + name[0].ToString().ToUpperInvariant()+name.Substring(1) + ".wav", UriKind.Relative);
-            player.MediaFailed += player_MediaFailed;
+            player.MediaEnded +=player_MediaEnded;
             currentIndex = num;
             name = name.ToUpperInvariant();
             right = new bool[name.Length];
@@ -68,10 +68,9 @@ namespace WpfChickenApplication.Windows
             this.MouseUp += Board_MouseUp;
             this.MouseMove += Board_MouseMove;
         }
-
-        void player_MediaFailed(object sender, ExceptionRoutedEventArgs e)
+        void player_MediaEnded(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(player.Source.OriginalString);
+            player.Stop();
         }
         private void Board_MouseUp(object sender, MouseButtonEventArgs e)
         {

@@ -26,6 +26,7 @@ namespace WpfChickenApplication.Windows
             ColorScheme.GetColorScheme(this);
             CurrentAcc = acc;
             accButton.Content = acc.Name;
+            CurrentAcc.Level_Avalible = 3;
         }
         private void levelButton_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -62,10 +63,21 @@ namespace WpfChickenApplication.Windows
         {
             if (CurrentAcc.Level_Avalible < 2)
             {
-                MessageBox.Show("Уровень недоступен, сначала пройдите обучение");
+                MessageBox.Show("Уровень недоступен, сначала пройдите уровень 1");
                 return;
             }
             Level2Selecter ls = new Level2Selecter();
+            ls.Show();
+        }
+
+        private void level3Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (CurrentAcc.Level_Avalible < 3)
+            {
+                MessageBox.Show("Уровень недоступен, сначала пройдите уровень 2");
+                return;
+            }
+            Level3Selecter ls = new Level3Selecter();
             ls.Show();
         }
     }

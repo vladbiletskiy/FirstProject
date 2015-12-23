@@ -35,6 +35,12 @@ namespace WpfChickenApplication.Windows
                 }
             }
             player.Source = new Uri("Resources/LetterSounds/" + s.ToUpperInvariant() + ".wav", UriKind.Relative);
+            player.MediaEnded += player_MediaEnded;
+        }
+
+        void player_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            player.Stop();
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {

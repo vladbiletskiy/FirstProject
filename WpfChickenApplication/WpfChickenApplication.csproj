@@ -71,6 +71,12 @@
     <Compile Include="Windows\Level2Selecter.xaml.cs">
       <DependentUpon>Level2Selecter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Level3.xaml.cs">
+      <DependentUpon>Level3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Level3Selecter.xaml.cs">
+      <DependentUpon>Level3Selecter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
@@ -101,6 +107,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Level2Selecter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Level3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Level3Selecter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -331,6 +345,7 @@
     <Resource Include="Resources\Level2Images\шкаф.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Backgrounds\halfAnswer.png" />
     <Content Include="Resources\Level1Sounds\Ёжик.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

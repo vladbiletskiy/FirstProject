@@ -18,7 +18,7 @@ namespace WpfChickenApplication.Windows
     {
         public MyAccount(Account acc)
         {
-            int[] total = new int[] { 33, 32, 20 };
+            int[] total = new int[] { 33, 32, 20,9 };
             InitializeComponent();
             ColorScheme.GetColorScheme(this);
             nameLabel.Content = acc.Name;
@@ -29,7 +29,7 @@ namespace WpfChickenApplication.Windows
                 t += total[i];
             }
             t += acc.Task_Avalible;
-            totalLabel.Content = Math.Round(((t / (33 + 32 + 20)) * 100)) + "%";
+            totalLabel.Content = Math.Round(((t / (33 + 32 + 20 + 9)) * 100)) + "%";
         }
         private void exitButton_Click(object sender, RoutedEventArgs e)
         {
