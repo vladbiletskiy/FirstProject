@@ -41,16 +41,10 @@ namespace WpfChickenApplication.Windows
             currentIndex = num;
             right = new bool[3,2];
             #region создение ячеек для картинок и подписей для ячеек
-            for (int i = (num - 1) * 3; i < num * 3; i++)
-            {
-                Board.Children.Add(new Image());
-                ((Image)Board.Children[Board.Children.Count - 1]).Name = "Box" + i%3;
-                ((Image)Board.Children[Board.Children.Count - 1]).Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Backgrounds/wrongAnswer.png"));
-                ((Image)Board.Children[Board.Children.Count - 1]).Width = 440;
-                ((Image)Board.Children[Board.Children.Count - 1]).Height = 260;
-                ((Image)Board.Children[Board.Children.Count - 1]).Margin = new Thickness((i%3 - 1) * 450, 140, 0, 0);
-                Boxes.Add((Image)Board.Children[Board.Children.Count - 1]);
-            }
+            Boxes.AddRange(new Image[] { Box0, Box1, Box2 });
+            Label1.Content = groups[(num-1) * 3][0];
+            Label2.Content = groups[(num-1) * 3+1][0];
+            Label3.Content = groups[(num-1) * 3+2][0];
             #endregion
             #region создание картинок
             for (int i = (num - 1) * 3; i < num * 3; i++)
@@ -124,7 +118,7 @@ namespace WpfChickenApplication.Windows
         }
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
-            if (currentIndex < images.Length)
+            if (currentIndex < 9)
             {
                 Level3 l = new Level3(currentIndex + 1);
                 l.Show();

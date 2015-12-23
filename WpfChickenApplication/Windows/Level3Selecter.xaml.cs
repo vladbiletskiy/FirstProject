@@ -62,6 +62,11 @@ namespace WpfChickenApplication.Windows
         {
             if (MainMenu.CurrentAcc.Level_Avalible == 3)
             {
+                if (MainMenu.CurrentAcc.Task_Avalible > 9)
+                {
+                    MessageBox.Show("Вы прошли все задания!");
+                    return;
+                }
                 Level3 l = new Level3(MainMenu.CurrentAcc.Task_Avalible);
                 l.Show();
             }

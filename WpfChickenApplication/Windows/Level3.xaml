@@ -6,6 +6,12 @@
     <Grid Name="Board">
         <Button x:Name="backButton" Content="             Назад" HorizontalAlignment="Left" Margin="71,610,0,0" VerticalAlignment="Top" Width="429" Height="122" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="backButton_Click"/>
         <Button x:Name="nextButton" Content="        Продолжить" HorizontalAlignment="Left" Margin="790,610,0,0" VerticalAlignment="Top" Width="430" Height="122" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="nextButton_Click" Visibility="Hidden"/>
+        <Image x:Name="Box0" HorizontalAlignment="Left" Height="335" Margin="310,210,0,0" VerticalAlignment="Top" Width="225" Source="/WpfChickenApplication;component/Resources/Backgrounds/wrongAnswer.png"/>
+        <Image x:Name="Box1" HorizontalAlignment="Left" Height="335" Margin="625,210,0,0" VerticalAlignment="Top" Width="225" Source="/WpfChickenApplication;component/Resources/Backgrounds/wrongAnswer.png"/>
+        <Image x:Name="Box2" HorizontalAlignment="Left" Height="335" Margin="940,210,0,0" VerticalAlignment="Top" Width="225" Source="/WpfChickenApplication;component/Resources/Backgrounds/wrongAnswer.png"/>
+        <Label x:Name="Label1" Content="Label" HorizontalAlignment="Left" Margin="345,330,0,0" VerticalAlignment="Top" Height="110" Width="190" FontFamily="Palatino Linotype" FontSize="24"/>
+        <Label x:Name="Label2" Content="Label" HorizontalAlignment="Left" Margin="660,330,0,0" VerticalAlignment="Top" Height="110" Width="190" FontFamily="Palatino Linotype" FontSize="24"/>
+        <Label x:Name="Label3" Content="Label" HorizontalAlignment="Left" Margin="975,330,0,0" VerticalAlignment="Top" Height="110" Width="190" FontFamily="Palatino Linotype" FontSize="24"/>
     </Grid>
     <Window.Resources>
         <GradientStopCollection x:Key="MyGlassGradientStopsResource">

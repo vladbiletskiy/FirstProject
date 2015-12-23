@@ -29,7 +29,8 @@ namespace WpfChickenApplication.Windows
                 t += total[i];
             }
             t += acc.Task_Avalible;
-            totalLabel.Content = Math.Round(((t / (33 + 32 + 20 + 9)) * 100)) + "%";
+            double full = (t / (33 + 32 + 20 + 9) > 1) ? 1 : t / (33 + 32 + 20 + 9);
+            totalLabel.Content = Math.Round(full*100) + "%";
         }
         private void exitButton_Click(object sender, RoutedEventArgs e)
         {

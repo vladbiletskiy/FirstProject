@@ -26,7 +26,6 @@ namespace WpfChickenApplication.Windows
             ColorScheme.GetColorScheme(this);
             CurrentAcc = acc;
             accButton.Content = acc.Name;
-            CurrentAcc.Level_Avalible = 3;
         }
         private void levelButton_MouseEnter(object sender, MouseEventArgs e)
         {
