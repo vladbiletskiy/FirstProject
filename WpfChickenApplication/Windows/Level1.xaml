@@ -7,6 +7,8 @@
         <Button x:Name="backButton" Content="             Назад" HorizontalAlignment="Left" Margin="71,610,0,0" VerticalAlignment="Top" Width="429" Height="122" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="backButton_Click"/>
         <Button x:Name="nextButton" Content="        Продолжить" HorizontalAlignment="Left" Margin="790,610,0,0" VerticalAlignment="Top" Width="430" Height="122" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Bold" FontStyle="Italic" Click="nextButton_Click" Visibility="Hidden"/>
         <Image x:Name="Word" HorizontalAlignment="Left" Height="315" Margin="505,10,0,0" VerticalAlignment="Top" Width="370" Source="/WpfChickenApplication;component/Resources/Level1Images/арбуз.png" RenderTransformOrigin="0.297,0.365"/>
+        <Image x:Name="Play" HorizontalAlignment="Left" Height="160" Margin="550,600,0,0" VerticalAlignment="Top" Width="175" Source="/WpfChickenApplication;component/Resources/Backgrounds/Play.png" MouseEnter="play_MouseEnter" MouseLeave="play_MouseLeave" MouseDown="play_MouseDown"/>
+        <MediaElement Name="player" HorizontalAlignment="Left" Height="100" Margin="395,260,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden" Volume="1" LoadedBehavior="Manual"/>
     </Grid>
     <Window.Resources>
         <GradientStopCollection x:Key="MyGlassGradientStopsResource">

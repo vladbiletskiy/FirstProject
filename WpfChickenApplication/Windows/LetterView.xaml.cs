@@ -34,6 +34,7 @@ namespace WpfChickenApplication.Windows
                     MainMenu.CurrentAcc.Level_Avalible++;
                 }
             }
+            player.Source = new Uri("Resources/LetterSounds/" + s.ToUpperInvariant() + ".wav", UriKind.Relative);
         }
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
@@ -47,6 +48,20 @@ namespace WpfChickenApplication.Windows
             LetterView next = new LetterView(Convert.ToString(alph[currentIndex+1]));
             next.Show();
             this.Close();
+        }
+        private void play_MouseEnter(object sender, MouseEventArgs e)
+        {
+            System.Windows.Media.Effects.DropShadowEffect effect = new System.Windows.Media.Effects.DropShadowEffect();
+            effect.ShadowDepth = 15;
+            ((Image)sender).Effect = effect;
+        }
+        private void play_MouseLeave(object sender, MouseEventArgs e)
+        {
+            ((Image)sender).Effect = null;
+        }
+        private void play_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            player.Play();
         }
     }
 }

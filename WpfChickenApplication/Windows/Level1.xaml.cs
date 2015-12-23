@@ -35,6 +35,8 @@ namespace WpfChickenApplication.Windows
             }
             name=images[num-1].Substring(46,images[num-1].Length-50);
             Word.Source = new BitmapImage(new Uri(images[num-1]));
+            player.Source = new Uri("Resources/Level1Sounds/" + name[0].ToString().ToUpperInvariant()+name.Substring(1) + ".wav", UriKind.Relative);
+            player.MediaFailed += player_MediaFailed;
             currentIndex = num;
             name = name.ToUpperInvariant();
             right = new bool[name.Length];
@@ -65,6 +67,11 @@ namespace WpfChickenApplication.Windows
             #endregion
             this.MouseUp += Board_MouseUp;
             this.MouseMove += Board_MouseMove;
+        }
+
+        void player_MediaFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+            MessageBox.Show(player.Source.OriginalString);
         }
         private void Board_MouseUp(object sender, MouseButtonEventArgs e)
         {
@@ -150,6 +157,20 @@ namespace WpfChickenApplication.Windows
                 }
             }
             return true;
+        }
+        private void play_MouseEnter(object sender, MouseEventArgs e)
+        {
+            System.Windows.Media.Effects.DropShadowEffect effect = new System.Windows.Media.Effects.DropShadowEffect();
+            effect.ShadowDepth = 15;
+            ((Image)sender).Effect = effect;
+        }
+        private void play_MouseLeave(object sender, MouseEventArgs e)
+        {
+            ((Image)sender).Effect = null;
+        }
+        private void play_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            player.Play();
         }
     }
 }
